@@ -3,7 +3,7 @@
 ## Content
 
 - [Initiate a repository](#initiate-a-repository)
-- [Create a branch](#create-a-branch)
+- [Working in team repo](#working-in-team-repo)
 
 ### Initiate a repository
 
@@ -46,4 +46,39 @@ To rename branch to match remote branch name:
 
 ```bash
 git branch -M main
+```
+
+### Working in team repo
+
+To copy a remote repo:
+
+```bash
+git clone <url>
+```
+
+Create your working branch (NEVER push changes into main branch without permission):
+
+```bash
+git switch -c feature-name
+```
+
+OR
+
+```bash
+git checkout -b feature-name
+// give a descriptive brach name
+```
+
+Make changes in a project files, save changes, stage changes:
+
+```bash
+git add .
+git commit -m "what you did"
+// write descriptive but short comments
+```
+
+Push changes to remote repo:
+
+```bash
+git push -u origin feature-name
 ```
