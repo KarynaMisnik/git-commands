@@ -4,6 +4,7 @@
 
 - [Initiate a repository](#initiate-a-repository)
 - [Working in team repo](#working-in-team-repo)
+- [Pulling request](#pulling-request)
 
 ### Initiate a repository
 
@@ -82,3 +83,12 @@ Push changes to remote repo:
 ```bash
 git push -u origin feature-name
 ```
+
+> Note: Before starting work (good habit)
+
+```bash
+git status // see local changes
+git pull // make sure you're up to date with remote
+```
+
+### Pulling request
